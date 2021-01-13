@@ -1,0 +1,12 @@
+{
+    "name": "jsignpdf/jsignpdf-bin",
+    "description": "Binaries necessary to run jsignpdf-php",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JSignPDF\\JSignPDFBin\\": "src/"
+        }
+    }
+}
