@@ -7,12 +7,12 @@ namespace JSignPDF\JSignPDFBin;
  */
 class JavaCommandService
 {
-    public static function instance()
+    public static function instance(): self
     {
         return new self();
     }
 
-    public function command($isInstalled = false)
+    public function command($isInstalled = false): string
     {
         if ($isInstalled)
             return "java";
@@ -20,7 +20,11 @@ class JavaCommandService
         return $this->builderPathJre();
     }
 
-    private function builderPathJre()
+    /**
+     * Downloaded from:
+     * https://github.com/adoptium/temurin21-binaries/releases
+     */
+    private function builderPathJre(): string
     {
         return __DIR__ .
             DIRECTORY_SEPARATOR .
