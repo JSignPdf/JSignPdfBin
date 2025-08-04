@@ -10,7 +10,7 @@ class JSignPdfPathService
     public static function jSignPdfJarPath()
     {
         return implode(DIRECTORY_SEPARATOR, [
-            __DIR__, '..', 'bin', 'jsignpdf-1.6.4', 'JSignPdf.jar'
+            __DIR__, '..', 'bin', 'jsignpdf-2.3.0', 'JSignPdf.jar'
         ]);
     }
 

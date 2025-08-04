@@ -17,10 +17,10 @@ class JavaCommandService
         if ($isInstalled)
             return "java";
 
-        return $this->builderPathJre(PHP_OS);
+        return $this->builderPathJre();
     }
 
-    private function builderPathJre($os)
+    private function builderPathJre()
     {
         return __DIR__ .
             DIRECTORY_SEPARATOR .
@@ -28,7 +28,7 @@ class JavaCommandService
             DIRECTORY_SEPARATOR .
             'bin' .
             DIRECTORY_SEPARATOR .
-            "jre1.8.0_241_".strtolower($os) .
+            'jdk-21.0.8+9-jre' .
             DIRECTORY_SEPARATOR .
             'bin' .
             DIRECTORY_SEPARATOR .
